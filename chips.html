@@ -1,0 +1,212 @@
+<!-- HOGANAS, CHARISSE JANE B. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   <style>
+       .box{
+            background: white;
+            padding: 10px;
+            text-align: center;
+       }
+   </style>
+   <title>FANCY FORM</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <div class="conatiner">
+                <a href="#" class="brand-logo">Web Design</a>
+                <ul id="nav-mobile" class="right hide-on-small-and-down">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="chip">
+            WEB DEVELOPMENT
+        </div>
+        <div class="chip">
+            WEB DESIGNING
+        </div>
+        <div class="chip">
+            WEB
+        </div>
+
+        <BR></BR><BR></BR>
+
+        <div class="chip">
+            WEB DEVELOPMENT
+            <div class="material-icons" close>close</div>
+        </div>
+        <div class="chip">
+            WEB DESIGNING
+            <div class="material-icons" close>close</div>
+        </div>
+        <div class="chip">
+            <div class="material-icons" close>close</div>
+            WEB
+        </div>
+
+        <!-- CHIPS WITH IMAGES -->
+        <div class="chip">
+            <img src="img/11.jpg" alt="">
+            WEB DEVELOPMENT
+        </div>
+        <div class="chip">
+            <img src="img/2.jpg" alt="">
+            WEB DESIGNING
+        </div>
+        <div class="chip">
+            <img src="img/1.jpg" alt="">
+            WEB
+        </div>
+        
+        <!-- CHIPS INPUT WITH AUTO COMPLETE -->
+        <!-- <div class="chips-input">
+            </div> -->
+
+        <div class="chips"></div>
+        <div class="chips chips-initial"></div>
+        <div class="chips chips-placeholder"></div>
+        <div class="chips chips-autocomplete"></div>
+      
+        <!-- Customizable input  -->
+        <div class="chips">
+          <input class="custom-class">
+        </div>
+
+        <!-- PAGINATION -->
+
+        <ul class="pagination">
+            <li class="disbaled">
+                <a href="#">
+                <i class="material-icons">chevron_left</i>
+            </a>
+        </li>
+        <li class="waves-effect">
+            <a href="#!">1</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#!">2</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#!">3</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#!">4</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#!">5</a>
+        </li>
+
+        <li class="waves-effect">
+            <a href="#!">
+                <i class="material-icons">chevron_right</i>
+            </a>
+        </li>
+        </ul>
+
+
+            <!-- END OF CONTAINER -->
+        </div>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+        //     $('.chips-input').material_chip({
+        //         placeholder: 'Enter a tag',
+        //         secondaryPlaceholder: '+tag',
+        //         autocompleteOption: {
+        //             data: {
+        //                 'html': null,
+        //                 'css': null,
+        //                 'javascript': null
+        //             }
+        //         }
+        //     });
+
+        //     $('.chips-input').on('chip.add'), function(e chip)
+        //     alert('You added a chip - $(chip.tag')
+        //   })
+
+            $('.chips').chips();
+            $('.chips-initial').chips({
+                data: [{
+                tag: 'Apple',
+                }, {
+                tag: 'Microsoft',
+                }, {
+                tag: 'Google',
+                }],
+            });
+            $('.chips-placeholder').chips({
+                placeholder: 'Enter a tag',
+                secondaryPlaceholder: '+Tag',
+            });
+            $('.chips-autocomplete').chips({
+                autocompleteOptions: {
+                data: {
+                    'Apple': null,
+                    'Microsoft': null,
+                    'Google': null
+                },
+                limit: Infinity,
+                minLength: 1
+                }
+            });
+
+          });
+
+      </script>
+</body>
+</html>
